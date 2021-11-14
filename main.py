@@ -30,3 +30,7 @@ for mention in mentions:
         print(mention.text)
         api.update_status('@' + mention.user.screen_name + ' hello back at you ' + mention.user.name , in_reply_to_status_id=mention.id)
 
+# need to do
+# get the latest tweet id
+# store in db / file
+# send the status only to the tweet after the latest id
